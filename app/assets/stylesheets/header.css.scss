@@ -1,0 +1,30 @@
+body .navbar-default 
+{
+	background-color:#fdfdfd;
+	border-color: #fdfdfd;
+	.navbar-nav
+	{
+		
+		li{background-color:#45456b;}	
+		
+//      .p1{background-color:#45456b;}
+//		.p2{background-color:#6a628b;}
+//		.p3{background-color:#8e799e;}
+//		.p4{background-color:#998495;}
+//		.p5{background-color:#B39EAF;}
+		
+	//.p5{
+	//		-webkit-box-shadow:inset 0px 0px 0px 1px #45456b;
+//			-moz-box-shadow:inset 0px 0px 0px 1px #45456b;
+//			box-shadow:inset 0px 0px 0px 1px #45456b;
+//			background-color:#fff;
+//			a{color:#45456b;}
+
+		//}
+		li{	
+			margin:0 1px;	
+			a:hover {background-color:#78789E; color:#fff}
+			a{color:#fff;}
+		}
+	}
+}

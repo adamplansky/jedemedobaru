@@ -1,0 +1,31 @@
+//.brand
+//{
+//  background:    no-repeat left center;
+//  height: 160px;
+//  width: 160px;
+//  position: fixed;
+//  overflow: visible;
+//  padding-left: 0;
+//  padding-top: 0;
+//}
+a.brand
+{
+	background-color:#fff;
+	width: 80px;
+	height: 78px;
+	background-image: url( image_path('logo.png'));
+}	
+/*CSS for serving the retina image to devices with a high "device-pixel-ratio":*/
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+	
+    a.brand{
+		background-color:#fff;
+		background-image: url( image_path('logo@2x.png'));
+	    background-size: 80px 78px;
+    }
+}
+//.navbar-nav > li > a { line-height: 75px; }
+//.navbar {min-height:100px}
+.navbar-header {padding-bottom:50px;}
+.navbar-nav {padding:25px;}
+.navbar{margin-bottom: 0px;}
