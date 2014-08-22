@@ -8,30 +8,31 @@
 	margin: 0 auto;
 	overflow: hidden;
 	background: transparent url( image_path('bg1.jpg')) repeat 0% 0%;
-	 background-size: 100% 100%;
-	 h1 {
-		 top:30px;
-		 position: relative; 
-		 background-color:#44476a;
-		 font-size:100px;
-		 text-align:left;
-	 }
+	background-size: 100% 100%;
+	h1 {
+		top:30px;
+		position: relative; 
+		background-color:#44476a;
+		font-size:100px;
+		text-align:left;
+	}
 }
 .hmax{
 	height: 427px;
 }
 .carousel-inner{
 	h2{
+		font-size:40px;
 		i{
-		background-color:rgba(69,69,107,0.7);
-		padding:5px;
+			background-color:rgba(69,69,107,0.7);
+			padding:5px;
 		
-    }
-	line-height:50px;
+		}
+		line-height:60px;
 		text-align:left; 
 		top:70px;
 		position: relative; 
-		width:300px;
+		width:500px;
 		margin:5px;
 
 	}
