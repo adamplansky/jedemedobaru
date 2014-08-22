@@ -1,0 +1,79 @@
+$purple: #45456B;
+
+//fix for left side nagivation panel =  gmaps
+.gmnoprint img { max-width: none; } 
+
+#google-map 
+{
+	position:relative;
+	.container .map-overlay{
+		left:20%;
+		display: inline-block;
+		position: absolute;
+		width: 400px;
+		height:150px;
+		color: #FFF;
+		bottom: 40px;
+		background-color: rgba(69, 69, 107, 0.8);
+	}
+	.pull-left {
+		
+		h2 {margin-bottom:5px;font-size: 27px;font-weight: bold;}
+		li{
+			font-size: 16px;
+			line-height: 26px;
+		}
+		.glyphicon-home{
+			padding:27px 20px 0;
+			font-size:50px;
+		}
+	}
+}
+.panel{
+	color:$purple;
+	.panel-heading{
+		text-align:center;
+		span{font-size:17px;color:$purple;}
+		h3{
+			font-size: 24px;
+			color:$purple;		
+			text-align:center;
+			display:inline;
+		}
+	}
+	.table tr td{
+		span
+		{
+			margin-right:5px;padding:5px 5px 0;
+		}
+		font-size:15px;
+		padding-left:16px;
+	 }
+	
+}
+body .form-horizontal .control-label{
+	text-align:left;
+}
+form fieldset .form-group div
+{
+	.form-control:focus
+	{
+		border-color:#fff;
+	}
+	button{
+		background-color:$purple;border:1px solid #fff;
+		
+		&:hover{background-color:#fff;
+		color:$purple;
+		border-color:$purple;}
+	}
+    span
+   {
+	   
+   	color: #E74C3C;
+   	margin-left: 5px;
+	
+   }
+
+}
+ 
