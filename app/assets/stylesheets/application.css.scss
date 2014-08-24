@@ -21,15 +21,16 @@ $purple: #45456B;
 .header{
 	text-align:center;
 	width: 100%;
-	background-color:#fff;
-	background-color:$purple;
+	//background-color:#fff;
+//	background-color:$purple;
 	color:#fff ;
 	h3{
 		letter-spacing:5px;
-		font-family: "Trebuchet MS";
+		font-weight:bold;
+		font-family: "Open Sans",sans-serif;
 		text-transform:uppercase;
 		padding:10px 0 5px 0;
-		margin:0;
+		margin:20px 0 10px 0;
 		font-size:50px;
 	}
 }

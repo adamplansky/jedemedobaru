@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  resource :contacts, only: [:new, :create]
+  
+  root to: 'contacts#new'
 end

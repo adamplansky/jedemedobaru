@@ -48,32 +48,37 @@ $purple: #45456B;
 		}
 		font-size:15px;
 		padding-left:16px;
-	 }
+	}
 	
 }
 body .form-horizontal .control-label{
 	text-align:left;
+	font-size:17px;
 }
-form fieldset .form-group div
+#new_contact 
 {
+	input[type=text], input[type=email], textarea{	color:#000;}
+
+	.control-group{
+		margin-bottom:50px;
+	}
 	.form-control:focus
 	{
 		border-color:#fff;
 	}
-	button{
-		background-color:$purple;border:1px solid #fff;
+	.btn{
+		background-color:$purple;
+		border:1px solid #fff;
 		
 		&:hover{background-color:#fff;
-		color:$purple;
-		border-color:$purple;}
+			color:$purple;
+			border-color:$purple;
+		}
 	}
-    span
-   {
-	   
-   	color: #E74C3C;
-   	margin-left: 5px;
+	span
+	{
+		color: #E74C3C;
+		margin-left: 5px;
 	
-   }
-
+	}
 }
- 
