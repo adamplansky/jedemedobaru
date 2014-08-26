@@ -1,0 +1,29 @@
+<div id="footer" class="footer <%= @purple ? '' : 'purple' %>">
+	<div class="container">
+		<div class="credit col-md-6" style="padding:20px 0 0 20px">
+		<p>
+			 <a href="#"> <%= image_tag  @purple ? "logo@2x.png" : "logo_white@2x.png" , alt: 'jedeme do baru logo', class:'brand img-responsive pull-left', width: "80" %></a>
+			 <a href="#" title="jedemedobaru.cz">jedemedobaru.cz</a> © 2014. <br>
+
+			 <small>jsme <strong>IT guys</strong>, kteří si poradí se vším, od algoritmickych problemů </small><br>
+ 			 <small>přes hardware, grafiku, eshopy, programy na míru, či informační systémy</small>
+		</p></div> 
+		<div class="col-md-2" style="padding:10px 0 0 10px ">
+	        <ul class="nav navbar-nav">
+	  		    <%= render 'layouts/navigation_links'%>
+	        </ul>
+		</div>
+		
+		<div class="col-md-4">
+	        <ul class="nav navbar-nav">
+				<h3>Kontakt</h3>
+	  		    <ul>
+	  		    	<li>+420 728 765 256</li>
+					<li>jedemedobaru@gmail.com</li>
+					<li>Riegrova 172, Kralupy nad Vltavou, 27801</li>
+	  		    </ul>
+	        </ul>
+		</div>
+		
+	</div>
+</div>

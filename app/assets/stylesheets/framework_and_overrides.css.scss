@@ -1,7 +1,7 @@
 // import the CSS framework
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+$purple: #45456B;
 // make all images responsive by default
 img {
 	@extend .img-responsive;
@@ -53,5 +53,32 @@ section {
 	@extend .row;
 	margin-top: 20px;
 }
-
+#footer{
+	background-color:#fdfdfd;
+	color:#000;
+	&.purple{
+		background-color:#44476a;
+		color:#fff;
+		
+		a{
+			color:#fff;
+		}
+	}
+	.container{padding:70px 30px;}
+	.nav a{font-size:13px}
+	.navbar-nav > li
+	{
+		float:center;
+		a{	padding:0;font-weight:normal;}
+	}
+	h3 { margin-top:0;}
+	a{
+		font-size:20px;
+		color:#000;
+		font-weight:bold;
+	}
+	ul{padding:0;}
+	ul li a:hover{color:$purple;background-color:#fdfdfd;font-weight:bold;}
+	img{padding-right:10px;}
+}
 
