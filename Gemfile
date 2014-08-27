@@ -17,6 +17,8 @@ gem 'sass_rails_patch'
 gem 'gmaps4rails'
 gem 'simple_form'
 gem "activerecord-tableless", "~> 1.0"
+gem 'tumblr_client'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
