@@ -1,24 +1,28 @@
 <div class="container blog" role="main">
 <% @allposts.each do |post| %>
-	<p class="post">
+	<div class="ppost">
 	<% dt = DateTime.parse(post["date"]) %>
-	<h2 style="text-align:center">
-	<%= dt.day %>.
-	<%= dt.month %>.
-	<%= dt.year %>
-	</h3>
-	<% if post["type"] == "photo" %>
-		<%= image_tag post["photos"][0]["original_size"]["url"] %></p>
-		<%= simple_format( post["caption"])%></p>
-	<% else %>
-		<h3><%=  post["title"]  %></h3>
-		<%= simple_format(  post["body"] ) %>
+		<h2 style="text-align:center">
+		<%= dt.day %>.
+		<%= dt.month %>.
+		<%= dt.year %>
+		</h3>
+		<% if post["type"] == "photo" %>
+			<%= image_tag post["photos"][0]["original_size"]["url"] %></p>
+			<%= simple_format( post["caption"])%></p>
+		<% else %>
+			<h3><%=  post["title"]  %></h3>
+			<%= simple_format(  post["body"] ) %>
+		<% end %>
+	</div>
 	<% end %>
-	</p>
-<% end %>
+
+
+	<div class="pn">
+	<%= link_to_previous_page @allposts, '<< Předchozí' %>
+
+	<%= link_to_next_page @allposts, 'Další >>' %>
+	</div>
+
 </div>
 
-
-<%= link_to_previous_page @allposts, 'Prev Page' %>
-
-<%= link_to_next_page @allposts, 'Next Page' %>
