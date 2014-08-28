@@ -23,7 +23,7 @@ class BlogController < ApplicationController
     @posts = @myClient.posts("jedemedobaru.tumblr.com", limit: PAGE_SIZE, offset: PAGE_SIZE * (page-1) )
     
     @posts["posts"].each_index do |i|
-      @allposts[(page-1)*5+i] = @posts["posts"][i]
+      @allposts[(page-1)*PAGE_SIZE+i] = @posts["posts"][i]
     end
     
     total_posts = @posts["total_posts"]
