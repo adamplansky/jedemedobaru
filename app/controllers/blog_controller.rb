@@ -3,7 +3,7 @@ require 'json'
 
 class BlogController < ApplicationController
   helper_method :mesice
-  PAGE_SIZE = 20
+  PAGE_SIZE = 5
   def index
     @myClient           = Tumblr::Client.new(
     :consumer_key       => Rails.application.secrets.tumblr_key,

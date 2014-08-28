@@ -7,7 +7,7 @@ $purple: #45456B;
 {
 	position:relative;
 	.container .map-overlay{
-		left:20%;
+		left:5%;
 		display: inline-block;
 		position: absolute;
 		width: 400px;
@@ -62,6 +62,7 @@ body .form-horizontal .control-label{
 	.control-group{
 		margin-bottom:50px;
 	}
+	.btn {margin-top:20px;}
 	.form-control:focus
 	{
 		border-color:#fff;
