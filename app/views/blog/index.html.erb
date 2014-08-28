@@ -1,5 +1,14 @@
 <h1>Hello, Rails!</h1>
 
-<% @posts.each do |post| %>
-	<% post[1] %>
+<% @allposts.each do |post| %>
+
+<p><%= post["id"]%></p>
+<p><%= post["caption"]%></p>
+
 <% end %>
+
+
+
+<%= link_to_previous_page @allposts, 'Prev Page' %>
+
+<%= link_to_next_page @allposts, 'Next Page' %>
