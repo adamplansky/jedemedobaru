@@ -2,9 +2,8 @@ require 'rubygems'
 require 'json'
 
 class BlogController < ApplicationController
-  
-   PAGE_SIZE = 5
-  
+  helper_method :mesice
+  PAGE_SIZE = 20
   def index
     @myClient           = Tumblr::Client.new(
     :consumer_key       => Rails.application.secrets.tumblr_key,
@@ -29,8 +28,17 @@ class BlogController < ApplicationController
     total_posts = @posts["total_posts"]
     
     @allposts = Kaminari.paginate_array(@allposts, total_count: total_posts).page(page).per(PAGE_SIZE)
- 
+    puts @allposts
     
   end #end index
+  
+  private
+
+   M_ARR = ["nil","leden", "únor", "březen", "duben", "květen", "červen", "červenec", "srpen", "září", "říjen", "listopad", "prosinec"];
+  def mesice(m)
+    M_ARR[m]
+  end
+  
+
   
 end

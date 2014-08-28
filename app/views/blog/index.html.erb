@@ -1,12 +1,22 @@
-<h1>Hello, Rails!</h1>
-
+<div class="container blog" role="main">
 <% @allposts.each do |post| %>
-
-<p><%= post["id"]%></p>
-<p><%= post["caption"]%></p>
-
+	<p class="post">
+	<% dt = DateTime.parse(post["date"]) %>
+	<h2 style="text-align:center">
+	<%= dt.day %>.
+	<%= dt.month %>.
+	<%= dt.year %>
+	</h3>
+	<% if post["type"] == "photo" %>
+		<%= image_tag post["photos"][0]["original_size"]["url"] %></p>
+		<%= simple_format( post["caption"])%></p>
+	<% else %>
+		<h3><%=  post["title"]  %></h3>
+		<%= simple_format(  post["body"] ) %>
+	<% end %>
+	</p>
 <% end %>
-
+</div>
 
 
 <%= link_to_previous_page @allposts, 'Prev Page' %>
