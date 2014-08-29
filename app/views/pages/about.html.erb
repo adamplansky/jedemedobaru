@@ -1,2 +1,75 @@
 <% content_for :title do %>Servis<% end %>
-<h3>servis</h3>
+
+
+
+<div class="bg"></div>
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-lg-4" >
+			<%= image_tag "logo_white@2x.png", style: "float:right"%>
+		</div>
+		<div class="col-lg-8">
+			<div class="page-header">
+				<h2 style="text-transform: uppercase;"> Jedeme do baru </h2>
+				<p>
+					<h2>
+						<small>MRDAM SVET CURACI </small> 					</h2>
+					
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container about" role="main">
+		<div class="header about"><h3>TEAM</h3></div>
+	
+	<% imgclass = "" %>
+	<div class="col-sm-4 col-md-3">
+		<div class="col-sm-12 colimg">	<%= image_tag 'adam.jpg', class: imgclass %> </div>
+		<div class="col-sm-12">
+			<h3>Adam Plánský</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et libero enim. In vitae semper erat. Morbi varius et tortor ut aliquet. Sed faucibus semper eros.
+			</p>
+		</div>
+	</div>
+	<div class="col-sm-4 col-md-3">
+		<div class="col-sm-12 colimg"><%= image_tag 'jura.jpg', class: imgclass %> </div> 
+		<div class="col-sm-12">
+			<h3>Jura Stránský</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et libero enim. In vitae semper erat. Morbi varius et tortor ut aliquet. Sed faucibus semper eros. 
+			</p>
+		</div>
+	</div>
+	<div class="col-sm-4 col-md-3">
+		<div class="col-sm-12 colimg"> <%= image_tag 'lucie.jpg', class: imgclass %> </div>
+		<div class="col-sm-12">
+			<h3>Lucie Kepplová</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et libero enim. In vitae semper erat. Morbi varius et tortor ut aliquet. Sed faucibus semper eros. 
+			</p>
+		</div>
+	</div>
+	<div class="col-sm-4 col-md-3">
+		<div class="col-sm-12 colimg"> <%= image_tag 'tom.jpg', class: imgclass %> </div>
+		<div class="col-sm-12">
+			<h3>Tomáš Břinčil</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et libero enim. In vitae semper erat. Morbi varius et tortor ut aliquet. Sed faucibus semper eros.  
+			</p>
+		</div>
+	</div>
+</div>
+
+	
+	<script type='text/javascript'>
+	$( document ).ready(function() {
+	
+	var jumboHeight = $('.jumbotron').outerHeight();
+	function parallax(){
+		var scrolled = $(window).scrollTop();
+		$('.bg').css('height', (jumboHeight-scrolled) + 'px');
+	}
+	$(window).scroll(function(e){
+		parallax();
+	});
+	});
+	</script>
